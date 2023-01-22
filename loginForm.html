@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!-- <a href="#home" id="navbar__logo">Powerzone </a> -->
+            <img src="./screenshot.png/download__1_-removebg-preview.png" alt="Flowers in Chania" width="230"
+                height="170">
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#gallery" class="navbar__links" id="services-page">Gallery</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="index.html#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- login form section -->
+
+    <section class="login_form_section">
+        <div class="form_wrapper">
+            <form action="register.php" method="POST" class="login_form">
+                <label for="name">Enter your Name</label>
+                <input name="name" id="name" type="text" placeholder="Enter your Name Here">
+                <label for="age">Enter your Age</label>
+                <input name="age" id="age" type="number" placeholder="Enter your Age Here" min="16" max="60">
+                <label for="email">Enter your Email</label>
+                <input name="mail" id="email" type="email" placeholder="Enter your Email Here">
+                <label for="number">Enter your Mobile Number</label>
+                <input name="mob" id="number" type="number" placeholder="Enter your Mobile number Here">
+                <label for="tenure">Enter your time of membership</label>
+                <select name="tenure" id="tenure" class="tenure_field">
+                    <option style="color:rgb(45, 111, 130);">Select membership</option>
+                    <option>3 month - (20,000 INR)</option>
+                    <option>6 month - (40,000 INR)</option>
+                    <option>9 month - (60,000 INR)</option>
+                    <option>12 month - (1,20,000 INR)</option>
+                    <option>18 month - (2,00,000 INR)</option>
+                    <option>36 month - (3,00,000 INR)</option>
+                </select>
+
+                <!-- <small>*fees will be discussed on call or email, as per requirement</small> -->
+                <button class="main__btn" type="submit">Become a Member</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <!-- <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+                <a href="/">Careers</a> <a href="/">Terms of Service</a>
+              </div> -->
+                <!-- <div class="footer__link--items">
+                <h2>Contact Us</h2>
+                <a href="/">Contact</a> <a href="/">Support</a>
+                <a href="/">Destinations</a>
+              </div>
+            </div>
+            <div class="footer__link--wrapper">
+              <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+                <a href="/">Agency</a>
+              </div>
+              <div class="footer__link--items">
+                <h2>Social Media</h2>
+                <a href="/">Instagram</a> <a href="/">Facebook</a>
+                <a href="/">Youtube</a> <a href="/">Twitter</a>
+              </div> -->
+            </div>
+        </div>
+        <!-- Social contacts -->
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">POWERZONE</a>
+                </div>
+                <p class="website__rights">© POWERZONE 2022. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
